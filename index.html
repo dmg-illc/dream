@@ -1,0 +1,411 @@
+<!-- INCLUDE HEADER -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dialogue Modelling Group</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="bibbase/dmg-bibbase.css">
+
+
+<style>
+    a {color:#e1a300 !important; text-decoration: none}
+    .w3-border{border:1px solid #ffc107 !important}
+</style>
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER + NAVIGATION STUCK AT THE TOP -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-text-white w3-large">
+        <a href="https://dmg-illc.github.io/dmg/"  class="w3-bar-item w3-button w3-hover-amber">home</a>
+        <a href="https://dmg-illc.github.io/dmg/#news" class="w3-bar-item w3-button w3-hover-amber">news</a>
+        <a href="https://dmg-illc.github.io/dmg/#people" class="w3-bar-item w3-button w3-hover-amber">people</a>
+        <a href="https://dmg-illc.github.io/dmg/#resources" class="w3-bar-item w3-button w3-hover-amber">resources</a>
+        <a href="https://dmg-illc.github.io/dmg/#publications" class="w3-bar-item w3-button w3-hover-amber">publications</a>
+    </div>
+</div>
+<!-- End of HEADER + NAVIGATION  STUCK AT THE TOP -->
+
+<!-- PICTURES AND SCRIPT FOR THE SLIDE SHOW IN THE HEADED -->
+<div class="w3-display-container mySlides">
+  <img src="img/map1.png" style="width:100%">
+  <div class="w3-display-left w3-xxxlarge w3-white w3-opacity w3-container" style="width:30%">Dialogue Modelling Group</div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/brain3.png" style="width:100%">
+  <div class="w3-display-left w3-xxxlarge w3-black w3-opacity-max w3-container" style="width:30%">Dialogue Modelling Group</div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/dmg1.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<!-- End of PICTURES AND SCRIPT FOR THE SLIDE SHOW IN THE HEADED -->
+
+
+<!-- ** WELCOME ** -->
+
+<div class="w3-container" style="padding:18px; margin-left:18px; margin-right:18px">
+
+<h2>Welcome ...</h2>
+
+    <p>
+    ... to the website of the <b>Dialogue Modeling Group</b> in Amsterdam!
+    </p>
+
+    <p>
+      We carry out research at the interface of computational linguistics, cognitive modelling and artificial intelligence.
+      Our aim is to understand how we use language to communicate with each other in situated environments and how dialogue
+      interaction shapes learning -- about the world and about language itself. These are some of the topics we work on:
+      Semantics and pragmatics of dialogue phenomena, visually grounded language and visual reasoning,
+      conversational agents and learning from interaction, language variation and change in communities of speakers.
+    </p>
+
+
+<!-- ** NEWS ** -->
+<h2 id="news"> </h2>
+<br><br>
+<h2 id="news">News</h2>
+
+  <ul>
+ <li>25/03/2022 Check out Joris' blogpost on <a href="https://towardsdatascience.com/7-things-you-didnt-know-about-the-transformer-a70d93ced6b2#e7de">Implementing a Transformer from Scratch</a>.</li>     
+ <li>23/03/2022 We are <strong>looking for 2 postdocs</strong> to join the group! 
+      <ul>
+          <li>2-year project on modelling face-to-face dialogue (gesture and language) using NLP, body-motion analysis, and ML; in collaboration with the Donders Institute. Preferred starting date: 1 July 2022. Apply <a href="https://tinyurl.com/3ubpes5k">here</a>.</li>
+          <li>2-year position within the ERC CoG project <i>Distributed Representations for Dialogue Management (DREAM)</i>, with considerable freedom on choosing your research agenda. Preferred starting date: 1 September 2022. The vacancy ad and application link will be available soon.</li>
+      </ul>
+   </li>
+ <li>20/03/2022 <a href="https://staff.fnwi.uva.nl/a.j.sinclair/">Arabella J. Sinclair</a> moves out to take up a Lectureship at the University of Aberdeen - congrats, Janie!</li>  
+ <li>14/03/2022 Mario presents his work on strategies of language production at the Language Technology Group Seminar of the Univerisity of Oslo.</li> 
+ <li>15/12/2021 <a href="https://winklerjustine.github.io">Justine Winkler</a> has joined our team as PhD candidate. Welcome, Justine!</li
+ <li>01/10/2021 <a href="https://jorisbaan.nl">Joris Baan</a> has joined the group as ELLIS PhD candidate, co-supervised by Barbara Plank. Welcome, Joris!</li>
+ <li>01/09/2021 <a href="https://sandropezzelle.github.io">Sandro Pezzelle</a> is now Assistant Professor in Responsible AI at the ILLC - congrats, Sandro!</li>
+ <li>New work by our group to appear at EMNLP, CoNLL, TACL, and SemDial; checkout our <a href="https://dmg-illc.github.io/dmg/#publications">publications</a>.</li>
+ <li>22/02/2021 <a href="https://resources.illc.uva.nl/illc-blog/machines-that-gaze-at-landscapes/">Blog post</a> by science journalist Iris Proff, featuring work led by Ece on using human gaze to guide image description generation.
+          Ece will be discussing this work at the <a href="https://ai.ku.edu.tr/ai-meetings/">AI Meetings</a> of Koç University on 9 March.
+    </li>
+
+  </ul>
+
+
+<!-- ** PEOPLE ** -->
+<h2 id="people"> </h2>
+<br><br>
+<h2>People</h2>
+
+
+<div class="w3-row"> <!-- FIRST ROW OF PEOPLE PHOTOS -->
+    
+  <div class="w3-col m3">
+    <div class="w3-card-2" style="width:90%">
+      <img src="img/raquel.png" alt="Raquel Fern&aacute;ndez" style="width:100%">
+      <div class="w3-container w3-center">
+      <p><a href="https://staff.fnwi.uva.nl/r.fernandezrovira/">Raquel Fern&aacute;ndez</a>
+      <br>Professor</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="w3-col m3">
+      <div class="w3-card-2" style="width:90%">
+        <img src="img/mario.png" alt="Mario Giulianelli" style="width:100%">
+        <div class="w3-container w3-center">
+          <p><a href="https://glnmario.github.io/">Mario Giulianelli</a>
+          <br>PhD candidate</p>
+        </div>
+      </div>
+  </div>
+    
+  <div class="w3-col m3">
+      <div class="w3-card-2" style="width:90%">
+        <img src="img/ece.png" alt="Ece Takmaz" style="width:100%">
+        <div class="w3-container w3-center">
+          <p><a href="https://ecekt.github.io/">Ece Takmaz</a>
+          <br>PhD candidate</p>
+        </div>
+      </div>
+  </div>
+  
+    
+</div> <!-- END OF ROW OF PEOPLE PHOTOS -->
+
+<br>
+<!-- ROW OF PEOPLE PHOTOS -->
+<div class="w3-row">
+    
+  <div class="w3-col m3">
+      <div class="w3-card-2" style="width:90%">
+        <img src="img/justine.png" alt="Justine Winkler" style="width:100%">
+        <div class="w3-container w3-center">
+          <p><a href="https://winklerjustine.github.io">Justine Winkler</a>
+          <br>PhD candidate</p>
+        </div>
+      </div>
+  </div>
+  <!--
+  <div class="w3-col m3">
+      <div class="w3-card-2" style="width:90%">
+        <img src="img/lieke.png" alt="Lieke Gelderloos" style="width:100%">
+        <div class="w3-container w3-center">
+          <p><a href="https://lgelderloos.github.io">Lieke Gelderloos</a>
+          <br>PhD candidate</p>
+        </div>
+      </div>
+  </div> -->
+  <div class="w3-col m3">
+      <div class="w3-card-2" style="width:90%">
+        <img src="img/joris.png" alt="Joris Baan" style="width:100%">
+        <div class="w3-container w3-center">
+          <p><a href="https://jorisbaan.nl">Joris Baan</a>
+          <br>PhD candidate</p>
+        </div>
+      </div>
+  </div>
+
+</div> <!-- END OF ROW OF PEOPLE PHOTOS -->
+    
+<h3>Affiliated Members</h3>
+
+<div class="w3-row">
+
+<div class="w3-row"> <!-- ROW OF PEOPLE PHOTOS -->
+  <div class="w3-col m3">
+    <div class="w3-card-2" style="width:90%">
+      <img src="img/sandro.png" alt="Sandro Pezzelle" style="width:100%">
+      <div class="w3-container w3-center">
+        <p><a href="https://sandropezzelle.github.io">Sandro Pezzelle</a>
+        <br>Assistant Professor</p>
+      </div>
+    </div>
+  </div>
+
+  <!--  <div class="w3-col m3">
+    <div class="w3-card-2" style="width:90%">
+      <img src="img/janie.png" alt="Arabella J. Sinclair" style="width:100%">
+      <div class="w3-container w3-center">
+        <p><a href="https://staff.fnwi.uva.nl/a.j.sinclair/">Arabella J. Sinclair</a>
+        <br>Postdoc</p>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="w3-col m3">
+    <div class="w3-card-2" style="width:90%">
+      <img src="img/iacer.png" alt="Iacer Calixto" style="width:100%">
+      <div class="w3-container w3-center">
+        <p><a href="https://iacercalixto.github.io">Iacer Calixto</a>
+        <br>Assistant Professor</p>
+      </div>
+    </div>
+  </div>    
+</div> <!-- END OF ROW OF PEOPLE PHOTOS -->
+    
+<!-- End of PEOPLE -->
+
+<h3>MSc Students / Research Assistants</h3>
+
+
+<ul>
+  <li>Lennert Jansen (<i>controlled generation in dialogue</i>)</li>
+  <!-- <li>Sammuel Ryb (<i>analytical and logical reasoning in large language models</i>)</li> -->
+  <li>Gabriele Gennaro (<i>agent adaptation in reference games</i>)</li>
+  <li>Xinyi Chen (<i>language understanding and reasoning abilities of visually grounded models</i>)</li>
+  <li>Pauline Sander (<i>meaning change</i>; Erasmus+ student from Saarland)</li>
+  <li>Jelle Bosscher (<i>interactive language modelling</i>)</li>
+  <li>Lars Laichter (<i>dialogue style transfer</i>)</li>
+</ul>
+
+
+<h3>Alumni (incomplete list)</h3>
+
+<p>
+  <a href="https://staff.fnwi.uva.nl/a.j.sinclair/">Arabella J. Sinclair</a>, postdoc 2019-2022, moved to lecturer (assistant professor) at University of Aberdeen.<br/>
+  <a href="https://sites.google.com/site/marcodeltredici/">Marco Del Tredici</a>, PhD candidate 2017-2020, moved to Machine Learning Scientist at Amazon Berlin.<br/>
+  <a href="https://eliabruni.github.io">Elia Bruni</a>, postdoc 2016-2018, moved to Marie Curie fellow at UPF Barcelona.<br/>
+  <a href="http://shekharravi.github.io">Ravi Shekhar</a>, PhD candidate 2016-2019, based in Tento and co-supervised with Raffaella Bernardi; moved to postdoc at Queen Mary University of London.<br/>
+  <a href="http://jjsch.github.io">Julian J. Schl&ouml;der</a>, PhD candiate 2014-2018, moved to postdoc at the ILLC.<br/>
+  <a href="https://janoschhaber.com">Janosch Haber</a>, MSc student 2018-2019, moved to PhD candidate at Queen Mary University of London.<br/>
+  <a href="https://lauraina.github.io">Laura Aina</a>, MSc student 2015-2017, moved to PhD candidate at UPF Barcelona.<br/>
+  <a href="https://winobes.github.io/about.html">Bill Noble</a>, MSc student 2014-2016, moved to PhD candidate at CLASP, University of Gothenburg.
+</p>
+
+<!--      <div class="w3-col m3">
+    <div class="w3-card-2" style="width:90%">
+      <img src="img/marco.png" alt="Marco Del Tredici" style="width:100%">
+      <div class="w3-container w3-center">
+        <p><a href="https://sites.google.com/site/marcodeltredici/">Marco Del Tredici</a>
+        <br>PhD candidate</p>
+      </div>
+    </div>
+  </div>
+-->
+
+<!-- ** RESOURCES ** -->
+
+<h2 id="resources"> </h2>
+<br><br>
+<h2>Resources</h2>
+
+<p>Datasets, code, and other publicly available resources developed by the Dialogue Modelling Group.</p>
+
+<h3>Language and vision</h3>
+
+<ul>
+  <li><b><a href="https://github.com/dmg-illc/didec-seq-gen">Generating Image Descriptions via Sequential Cross-Modal Alignment Guided by Human Gaze</a></b></br>
+    Code repository for our work on leveraging eye-tracking data to model image description generation.
+
+  </li>
+  <li><b><a href="https://github.com/sandropezzelle/malevic">MALeViC: Modeling Adjectives Leveraging Visual Contexts</a></b><br>
+Dataset of synthetic images with pairs of statements and truth values related to size adjectives, as well as code repository for serveral experiments and analyses that leverage this dataset.
+  </li>
+
+  <li><b><a href="https://dmg-photobook.github.io">The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue</a></b><br>
+A large-scale collection of 2,500 human-human, visually-grounded and goal-oriented English conversations between pairs of participants. Funded by ParlAI, Facebook AI Research.
+The website includes links to download several subsets of the data and to code repositories for several experiments and models.
+  </li>
+
+  <li><b><a href="https://vista-unitn-uva.github.io">VISTA: Visually Grounded Talking Agents</a></b><br>
+Code and overview of research on visually-grounded language in interactive settings presented in a series of papers led jointly with Raffaella Bernardi.
+  </li>
+</ul>
+
+<h3>Linguistic variation and change</h3>
+
+<ul>
+  <li><b><a href="https://zenodo.org/record/3773250#.Xu-Vji9h3OQ">DUPS: Diachronic Usage Pair Similarity</a></b><br>
+  Dataset of similarity judgements of English word usage pairs from different time periods, as described by <a href="https://www.aclweb.org/anthology/2020.acl-main.365/">Giulianelli et al. 2020</a></li>
+
+  <li><b><a href="https://github.com/marcodel13/Short-term-meaning-shift">Short-term Meaning Shift</a></b><br>
+    Dataset of words annotated by users of the subredit r/LiverpoolFC for meaning change. See <a href="https://www.aclweb.org/anthology/N19-1210">Del Tredici et al. 2019</a>.
+  </li>
+
+  <li><b><a href="https://github.com/marcodel13/The-Road-to-Success">The Road to Success</a></b><br>
+  Dataset from 20 Reddit forums (subedits) and code to reproduce the findings by <a href="http://aclweb.org/anthology/C18-1135">Del Tredici and Fern&aacute;ndez 2018.</a>
+  </li>
+</ul>
+
+<h3>Other topics</h3>
+
+<ul>
+  <li><b><a href="https://zenodo.org/record/2630551#.XiST-i2ZPOQ">The LAMBADA dataset: Word prediction requiring a broad discourse context</a></b><br>
+  Dataset to evaluate the capabilities of computational models for text understanding by means of a word prediction task. See <a href="https://www.aclweb.org/anthology/P16-1144">Paperno et al. 2016</a>.
+  </li>
+
+  <li><b><a href="https://staff.fnwi.uva.nl/r.fernandezrovira/cf.php">Corrective Feedback in First Language Acquisition</a></b><br>
+  Dataset of corrective feedback moves in CHILDES corpora annotated according to the taxonomy proposed by <a href="http://aclweb.org/anthology/K/K16/K16-1011.pdf">Hiller and Fern&aacute;ndez 2016.</a>
+  </li>
+
+  <li><b><a href="https://uvaauas.figshare.com/articles/TaxonomyRejection/8870615">How to Reject What in Dialogue</a></b><br>
+  Dataset of rejection moves from several dialogue corpora annotated according to the rejection taxonomy proposed by <a href="http://semdial.org/anthology/papers/Z/Z19/Z19-3014/">Schl&ouml;der and Fern&aacute;ndez 2019</a>.
+  </li>
+
+  <li><b><a href="http://www.illc.uva.nl/Resources/CollectiveAnnotation/">Collective Annotation</a></b></br>
+  Datasets and resources related to the problem of aggregating the judgements of multiple individuals, regarding a linguistic annotation task or similar, into a single collective judgement that reflects the view of the community. Project jointly led with Ulle Endriss.
+  </li>
+
+  <li><b><a href="https://staff.fnwi.uva.nl/r.fernandezrovira/xprag/">Quantified Referring Expressions</a></b><br>
+  Data from an online elicitation experiment on the use of quantified referring expressions.
+  </li>
+</ul>
+
+
+<!-- End of RESOURCES -->
+
+<h2 id="publications"> </h2>
+<br><br>
+<h2>Publications</h2>
+
+<!-- <script src="https://bibbase.org/show?bib=https%3A%2F%2Fdmg-illc.github.io%2Fdmg%2Fbibbase%2Fdmg-publications.bib&theme=simple&hidemenu=true&commas=true&fullnames=1&jsonp=1"></script> -->
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2Fdmg-illc%2Fdmg%2Fmaster%2Fbibbase%2Fdmg-publications.bib&theme=simple&hidemenu=true&commas=true&fullnames=1&jsonp=1"></script>
+<!-- ** NEWS ARCHIVE ** -->
+
+<h2 id="news-archive"> </h2>
+<br><br>
+<h2>News archive</h2>
+
+<ul>
+  <li>15/12/2020 <a href="https://resources.illc.uva.nl/illc-blog/imagine-we-could-detect-fake-news-what-then/">Blog post</a> by science journlist Iris Proff featuring Marco's work on fake news detection.
+    </li>
+  <li>10/12/2020 Mario's MSc AI thesis on lexical semantic change has received the <a href="https://amsterdamdatascience.nl/events/thesis-awards/">Amsterdam Data Science MSc Thesis Award</a>!
+    </li>
+    <li>06/11/2020 Congrats to Marco, who has successfuly defended his PhD thesis <A href="https://sites.google.com/site/marcodeltredici/abstract">Linguistic Variation in Online Communities: A Computational Perspective</a>
+  </li>
+  <li>New work by our group published at EMNLP (<a href="https://www.aclweb.org/anthology/2020.emnlp-main.377/">Generating Image Descriptions via Sequential Cross-Modal Alignment Guided by Human Gaze</a> and
+      <a href="https://www.aclweb.org/anthology/2020.emnlp-main.353/">Refer, Reuse, Reduce...</a>),
+  at Findings of EMNLP (<a href="https://sites.google.com/view/bd2bb/">Be Different to Be Better!</a>),
+  at COLING (<a href="https://www.aclweb.org/anthology/2020.coling-main.477/">Words are the Window to the Soul...</a>)
+  and at CLiC-It (<a href="http://ceur-ws.org/Vol-2769/paper_38.pdf">Grounded and Ungrounded Referring Expressions in Human Dialogues</a>).
+  </li>
+
+  <li>ACL 2020: Mario will be presenting the paper
+      <a href="https://www.aclweb.org/anthology/2020.acl-main.365/">Analysing Lexical Semantic Change with Contextualised Word Representations</a>,
+      Lieke the paper <a href="https://www.aclweb.org/anthology/2020.acl-main.1/">Learning to Understand Child-directed and Adult-directed Speech</a>
+    and Ece will be a live microblogger in the Language Grounding track (<a href="https://twitter.com/ecekt2">@ecekt2</a>).
+  </li>
+
+  <li>Spring 2020: Sandro and Raquel were awarded a grant by the Research Priority Area Human(e) AI to carry out an interdisciplinary project on
+    <a href="https://humane-ai.nl/seed-funded-projects-2020-2021/exploring-adaptation-of-conversational-systems-to-different-age-groups/">
+      adaptation of conversational agents to different age groups</a>.</li>
+  <li>Spring 2020: Ece has joined <a href="http://eacl.org/">EACL</a>'s student board.</li>
+</ul>
+<!-- End of NEWS ARCHIVE -->
+
+</div>
+
+<!-- INCLUDE FOOTER -->
+
+<br>
+<footer class="w3-container" style="color:#fff !important;background-color:#616161 !important">
+
+    <div class="w3-row-padding w3-padding">
+    <div class="w3-container w3-half">
+        <h6><i class="fa fa-at w3-text-amber w3-large"></i> Contact</h6>
+        <p class="w3-small">
+        &nbsp;&nbsp; &nbsp; raquel.fernandez@uva.nl<br>
+        &nbsp;&nbsp; &nbsp; Science Park 107, office F1.07<br>
+        <!-- &nbsp;&nbsp; &nbsp; Office F1.07</br> -->
+        &nbsp;&nbsp; &nbsp; +31 (0)20 525 7009 <br>
+        &nbsp;&nbsp; &nbsp; <a href="https://twitter.com/raquel_dmg">@raquel_dmg</a><br>
+        </p>
+    </div>
+
+    <div class="w3-container w3-half" style="margin-left=20px">
+        <h6><i class="fa fa-envelope-o w3-text-amber w3-large"></i> Postal address </h6>
+        <p class="w3-small">
+        &nbsp;&nbsp; &nbsp; Institute for Logic, Language and Computation<br>
+        &nbsp;&nbsp; &nbsp; University of Amsterdam<br>
+        &nbsp;&nbsp; &nbsp; P.O. Box 94242<br>
+        &nbsp;&nbsp; &nbsp; 1090 GE Amsterdam, Netherlands
+        </p>
+    </div>
+    </div>
+</footer>
+<!-- ** End of FOOTER ** -->
+
+
+</body>
+</html>
