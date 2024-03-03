@@ -1,3 +1,42 @@
+@inproceedings{testoni-fernandez-eacl-2024,
+    title = "Asking the Right Question at the Right Time: Human and Model Uncertainty Guidance To Ask Clarification Questions",
+    author = "Alberto Testoni and Raquel Fern{\'a}ndez",
+    booktitle = "Proceedings of the European Chapter of the Association for Computational Linguistics (EACL)",
+    year = "2024",
+    url = "https://arxiv.org/abs/2402.06509",
+    abstract = "Clarification questions are an essential dialogue tool to signal misunderstanding, ambiguities, and under-specification in language use. While humans are able to resolve uncertainty by asking questions since childhood, modern dialogue systems struggle to generate effective questions. To make progress in this direction, in this work we take a collaborative dialogue task as a testbed and study how model uncertainty relates to human uncertainty -- an as yet under-explored problem. We show that model uncertainty does not mirror human clarification-seeking behavior, which suggests that using human clarification questions as supervision for deciding when to ask may not be the most effective way to resolve model uncertainty. To address this issue, we propose an approach to generating clarification questions based on model uncertainty estimation, compare it to several alternatives, and show that it leads to significant improvements in terms of task success. Our findings highlight the importance of equipping dialogue systems with the ability to assess their own uncertainty and exploit in interaction.",
+    note = "To appear"
+}
+
+@inproceedings{takmaz-etal-eacl-2024,
+    title = "Describing Images \textit{Fast and Slow}: Quantifying and Predicting the Variation in Human Signals during Visuo-Linguistic Processes",
+    author = "Ece Takmaz and Sandro Pezzelle and Raquel Fern{\'a}ndez",
+    booktitle = "Proceedings of the European Chapter of the Association for Computational Linguistics (EACL)",
+    year = "2024",
+    url = "https://arxiv.org/abs/2402.01352",
+    abstract = "There is an intricate relation between the properties of an image and how humans behave while describing the image. This behavior shows ample variation, as manifested in human signals such as eye movements and when humans start to describe the image. Despite the value of such signals of visuo-linguistic variation, they are virtually disregarded in the training of current pretrained models, which motivates further investigation. Using a corpus of Dutch image descriptions with concurrently collected eye-tracking data, we explore the nature of the variation in visuo-linguistic signals, and find that they correlate with each other. Given this result, we hypothesize that variation stems partly from the properties of the images, and explore whether image representations encoded by pretrained vision encoders can capture such variation. Our results indicate that pretrained models do so to a weak-to-moderate degree, suggesting that the models lack biases about what makes a stimulus complex for humans and what leads to variations in human outputs.",
+    url_github = "https://github.com/ecekt/visuolinguistic_signal_variation",
+    note = "To appear"
+}
+
+@inproceedings{giulianelli-etal-2023-information,
+    title = "Information Value: Measuring Utterance Predictability as Distance from Plausible Alternatives",
+    author = "Mario Giulianelli and Sarenne Wallbridge and Raquel Fern{\'a}ndez",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    year = "2023",
+    url ="https://aclanthology.org/2023.emnlp-main.343/",
+    abstract = "We present information value, a measure which quantifies the predictability of an utterance relative to a set of plausible alternatives. We introduce a method to obtain interpretable estimates of information value using neural text generators, and exploit their psychometric predictive power to investigate the dimensions of predictability that drive human comprehension behaviour. Information value is a stronger predictor of utterance acceptability in written and spoken dialogue than aggregates of token-level surprisal and it is complementary to surprisal for predicting eye-tracked reading times."
+}
+
+@inproceedings{giulianelli-etal-2023-arxiv,
+    title = "What Comes Next? Evaluating Uncertainty in Neural Text Generators Against Human Production Variability",
+    author = " Giulianelli, Mario and Baan, Joris and Aziz, Wilker and Fern{\'a}ndez, Raquel and Plank, Barbara",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    year = "2023",
+    url = "https://aclanthology.org/2023.emnlp-main.887/",
+    abstract = "In Natural Language Generation (NLG) tasks, for any input, multiple communicative goals are plausible, and any goal can be put into words, or produced, in multiple ways. We characterise the extent to which human production varies lexically, syntactically, and semantically across four NLG tasks, connecting human production variability to aleatoric or data uncertainty. We then inspect the space of output strings shaped by a generation system{'}s predicted probability distribution and decoding algorithm to probe its uncertainty. For each test input, we measure the generator{'}s calibration to human production variability. Following this instance-level approach, we analyse NLG models and decoding strategies, demonstrating that probing a generator with multiple samples and, when possible, multiple references, provides the level of detail necessary to gain understanding of a model{'}s representation of uncertainty."
+}
+
 
 @inproceedings{giulianelli-etal-2023,
     title = "Interpretable Word Sense Representations via Definition Generation: The Case of Semantic Change Analysis",
