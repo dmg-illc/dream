@@ -43,14 +43,23 @@ capture the multimodal nature of human concept representations.}
 }
 
 
-@inproceedings{Bavaresco-Fernandez-arxiv-2025,
+@inproceedings{Bavaresco-Fernandez-conll-2025,
   author = 	 {Anna Bavaresco and Raquel Fern\'{a}ndez},
   title = 	 {Experiential Semantic Information and Brain Alignment: Are Multimodal Models Better than Language Models?},
   booktitle = 	 {Proceedings of the 29th Conference on Computational Natural Language Learning (CoNLL)},
   year = 	 {2025},
-  note = {To appear.},
-  url = {https://arxiv.org/pdf/2504.00942},
+  url = {https://aclanthology.org/2025.conll-1.10/},
   abstract = {A common assumption in Computational Linguistics is that text representations learnt by multimodal models are richer and more human-like than those by language-only models, as they are grounded in images or audio -- similar to how human language is grounded in real-world experiences. However, empirical studies checking whether this is true are largely lacking. We address this gap by comparing word representations from contrastive multimodal models vs. language-only ones in the extent to which they capture experiential information -- as defined by an existing norm-based 'experiential model' -- and align with human fMRI responses. Our results indicate that, surprisingly, language-only models are superior to multimodal ones in both respects. Additionally, they learn more unique brain-relevant semantic information beyond that shared with the experiential model. Overall, our study highlights the need to develop computational models that better integrate the complementary semantic information provided by multimodal data sources.}
+}
+
+@inproceedings{ghaleb-etal-acl-2025, 
+  author={Ghaleb, Esam and Khaertdinov, Bulat and {\"O}zy{\"u}rek, Asl{\i} and Fern{\'a}ndez, Raquel},
+  title={I see what you mean: Co-Speech Gestures for Reference Resolution in Multimodal Dialogue},
+  booktitle={Proceedings of the of the 63rd Conference of the Association for Computational Linguistics (ACL Findings)},
+  year={2025},
+  url={https://aclanthology.org/2025.findings-acl.682/},
+  url_github={https://github.com/EsamGhaleb/MultimodalReferenceResolution},
+  abstract={In face-to-face interaction, we use multiple modalities, including speech and gestures, to communicate information and resolve references to objects. However, how representational co-speech gestures refer to objects remains understudied from a computational perspective. In this work, we address this gap by introducing a multimodal reference resolution task centred on representational gestures, while simultaneously tackling the challenge of learning robust gesture embeddings. We propose a self-supervised pre-training approach to gesture representation learning that grounds body movements in spoken language. Our experiments show that the learned embeddings align with expert annotations and have significant predictive power. Moreover, reference resolution accuracy further improves when (1) using multimodal gesture representations, even when speech is unavailable at inference time, and (2) leveraging dialogue history. Overall, our findings highlight the complementary roles of gesture and speech in reference resolution, offering a step towards more naturalistic models of human-machine interaction.}
 }
 
 @inproceedings{judgebench-acl-2025,
@@ -79,6 +88,25 @@ replace human judges in NLP.}
   abstract={Ambiguity resolution is key to effective communication. While humans effortlessly address ambiguity through conversational grounding strategies, the extent to which current language models can emulate these strategies remains unclear. In this work, we examine referential ambiguity in image-based question answering by introducing RACQUET, a carefully curated dataset targeting distinct aspects of ambiguity. Through a series of evaluations, we reveal significant limitations and problems of overconfidence of state-of-the-art large multimodal language models in addressing ambiguity in their responses. The overconfidence issue becomes particularly relevant for RACQUET-BIAS, a subset designed to analyze a critical yet underexplored problem: failing to address ambiguity leads to stereotypical, socially biased responses. Our results underscore the urgency of equipping models with robust strategies to deal with uncertainty without resorting to undesirable stereotypes.}
 }
 
+@inproceedings{surikuchi-etal-2024,
+title={Not (yet) the whole story: Evaluating Visual Storytelling Requires More than Measuring Coherence, Grounding, and Repetition},
+author={Aditya K. Surikuchi and Raquel Fern\'{a}ndez and Sandro Pezzelle},
+year={2024},
+booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP Findings)},
+url={https://aclanthology.org/2024.findings-emnlp.679/},
+url_github = {https://github.com/akskuchi/dHM-visual-storytelling},
+abstract={Visual storytelling consists in generating a natural language story given a temporally ordered sequence of images. This task is not only challenging for models, but also very difficult to evaluate with automatic metrics since there is no consensus about what makes a story 'good'. In this paper, we introduce a novel method that measures story quality in terms of human likeness regarding three key aspects highlighted in previous work: visual grounding, coherence, and repetitiveness. We then use this method to evaluate the stories generated by several models, showing that the foundation model LLaVA obtains the best result, but only slightly so compared to TAPM, a 50-times smaller visual storytelling model. Upgrading the visual and language components of TAPM results in a model that yields competitive performance with a relatively low number of parameters. Finally, we carry out a human evaluation study, whose results suggest that a 'good' story may require more than a human-like level of visual grounding, coherence, and repetition.
+}
+
+@inproceedings{ghaleb-etal-icmi-2024,
+  title={Learning Co-Speech Gesture Representations in Dialogue through Contrastive Learning: An Intrinsic Evaluation},
+  author={Ghaleb, Esam and Khaertdinov, Bulat and Rasenberg, Marlou and Pouw, Wim and Holler, Judith and {\"O}zy{\"u}rek, Asl{\i} and Fern{\'a}ndez, Raquel},
+  booktitle={Proceedings of the 26th ACM International Conference on Multimodal Interaction (ICMI)},  
+  year={2024},
+  url ={https://dl.acm.org/doi/10.1145/3678957.3685707},
+  url_github = {https://github.com/EsamGhaleb/Learning-Co-Speech-Gesture-Representations},
+  abstract={In face-to-face dialogues, the form-meaning relationship of co-speech gestures varies depending on contextual factors such as what the gestures refer to and the individual characteristics of speakers. These factors make co-speech gesture representation learning challenging. How can we learn meaningful gestures representations considering gestures' variability and relationship with speech? This paper tackles this challenge by employing self-supervised contrastive learning techniques to learn gesture representations from skeletal and speech information. We propose an approach that includes both unimodal and multimodal pre-training to ground gesture representations in co-occurring speech. For training, we utilize a face-to-face dialogue dataset rich with representational iconic gestures. We conduct thorough intrinsic evaluations of the learned representations through comparison with human-annotated pairwise gesture similarity. Moreover, we perform a diagnostic probing analysis to assess the possibility of recovering interpretable gesture features from the learned representations. Our results show a significant positive correlation with human-annotated gesture similarity and reveal that the similarity between the learned representations is consistent with well-motivated patterns related to the dynamics of dialogue interaction. Moreover, our findings demonstrate that several features concerning the form of gestures can be recovered from the latent representations. Overall, this study shows that multimodal contrastive learning is a promising approach for learning gesture representations, which opens the door to using such representations in larger-scale gesture analysis studies.}
+}
 
 @inproceedings{bavaresco-etal-acl-2024,
 title={Don't Buy it! Reassessing the Ad Understanding Abilities of Contrastive Multimodal Models},
@@ -119,6 +147,25 @@ abstract={While human speakers use a variety of different expressions when descr
     year = "2024",
     url = "https://aclanthology.org/2024.eacl-long.16/",
     abstract = "Clarification questions are an essential dialogue tool to signal misunderstanding, ambiguities, and under-specification in language use. While humans are able to resolve uncertainty by asking questions since childhood, modern dialogue systems struggle to generate effective questions. To make progress in this direction, in this work we take a collaborative dialogue task as a testbed and study how model uncertainty relates to human uncertainty -- an as yet under-explored problem. We show that model uncertainty does not mirror human clarification-seeking behavior, which suggests that using human clarification questions as supervision for deciding when to ask may not be the most effective way to resolve model uncertainty. To address this issue, we propose an approach to generating clarification questions based on model uncertainty estimation, compare it to several alternatives, and show that it leads to significant improvements in terms of task success. Our findings highlight the importance of equipping dialogue systems with the ability to assess their own uncertainty and exploit in interaction."
+}
+
+@inproceedings{testoni-etal-acl-2024,
+title={Naming, Describing, and Quantifying Visual Objects in Humans and LLMs},
+author={Alberto Testoni and Juell Sprott and Sandro Pezzelle},
+booktitle={Proceedings of the 62nd Conference of the Association for Computational Linguistics (ACL 2024)},
+year={2024},
+url={https://aclanthology.org/2024.acl-short.50/},
+abstract={While human speakers use a variety of different expressions when describing the same object in an image, giving rise to a distribution of plausible labels driven by pragmatic constraints, the extent to which current Vision and Language Large Language Models (VLLMs) can mimic this crucial feature of language use is an open question. This applies to common, everyday objects, but it is particularly interesting for uncommon or novel objects for which a category label may be lacking or fuzzy. Furthermore, humans show clear production preferences for highly context-sensitive expressions, such as the quantifiers `few' or `most'. In our work, we evaluate VLLMs (FROMAGe, BLIP-2, LLaVA) on three categories (nouns, attributes, and quantifiers) where humans show great subjective variability concerning the distribution over plausible labels, using datasets and resources mostly under-explored in previous work. Our results reveal mixed evidence on the ability of VLLMs to capture human naming preferences, with all models failing in tasks that require high-level reasoning such as assigning quantifiers.}
+}
+
+@inproceedings{ghaleb-etal-cogsci-2024,
+  title={Analysing Cross-Speaker Convergence through the Lens of Automatically Detected Shared Linguistic Constructions},
+  author={Ghaleb, Esam and Rasenberg, Marlou and Pouw, Wim and Toni, Ivan and Holler, Judith and {\"O}zy{\"u}rek, Asl{\i} and Fern{\'a}ndez, Raquel},
+  booktitle={Proceedings of the Annual Meeting of the Cognitive Science Society},
+  volume={46},
+  year={2024},
+  url={https://escholarship.org/uc/item/43h970fc},
+  abstract={Conversation requires a substantial amount of coordination between dialogue participants, from managing turn taking to negotiating mutual understanding. Part of this coordination effort surfaces as the reuse of linguistic behaviour across speakers, a process often referred to as alignment. While the presence of linguistic alignment is well documented in the literature, several questions remain open, including the extent to which patterns of reuse across speakers have an impact on the emergence of labelling conventions for novel referents. In this study, we put forward a methodology for automatically detecting shared lemmatised constructions—expressions with a common lexical core used by both speakers within a dialogue—and apply it to a referential communication corpus where participants aim to identify novel objects for which no established labels exist. Our analyses uncover the usage patterns of shared constructions in interaction and reveal that features such as their frequency and the amount of different constructions used for a referent are associated with the degree of object labelling convergence the participants exhibit after social interaction. More generally, the present study shows that automatically detected shared constructions offer a useful level of analysis to investigate the dynamics of reference negotiation in dialogue.}
 }
 
 @inproceedings{takmaz-etal-eacl-2024,
@@ -195,6 +242,15 @@ url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cogs.13248},
 eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cogs.13248},
 abstract = {Abstract When communicating, people adapt their linguistic representations to those of their interlocutors. Previous studies have shown that this also occurs at the semantic level for vague and context-dependent terms such as quantifiers and uncertainty expressions. However, work to date has mostly focused on passive exposure to a given speaker's interpretation, without considering the possible role of active linguistic interaction. In this study, we focus on gradable adjectives big and small and develop a novel experimental paradigm that allows participants to ask clarification questions to figure out their interlocutor's interpretation. We find that, when in doubt, speakers do resort to this strategy, despite its inherent cognitive cost, and that doing so results in higher semantic alignment measured in terms of communicative success. While not all question–answer pairs are equally informative, we show that speakers become better questioners as the interaction progresses. Yet, the higher semantic alignment observed when speakers are able to ask questions does not increase over time. This suggests that conversational interaction's key advantage may be to boost coordination without committing to long-term semantic updates. Our findings shed new light on the mechanisms used by speakers to achieve semantic alignment and on how language is shaped by communication.},
 year = {2023}
+}
+
+@inproceedings{surikuchi-etal-2023-emnlp,
+    title = "GROOViST: A Metric for Grounding Objects in Visual Storytelling",
+    author = "Aditya Surikuchi and Sandro Pezzelle and Raquel Fern{\'a}ndez",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    year = "2023",
+    url ="https://aclanthology.org/2023.emnlp-main.202/",
+    abstract = "A proper evaluation of stories generated for a sequence of images{---}the task commonly referred to as visual storytelling{---}must consider multiple aspects, such as coherence, grammatical correctness, and visual grounding. In this work, we focus on evaluating the degree of grounding, that is, the extent to which a story is about the entities shown in the images. We analyze current metrics, both designed for this purpose and for general vision-text alignment. Given their observed shortcomings, we propose a novel evaluation tool, GROOViST, that accounts for cross-modal dependencies, \textit{temporal misalignments} (the fact that the order in which entities appear in the story and the image sequence may not match), and human intuitions on visual grounding. An additional advantage of GROOViST is its modular design, where the contribution of each component can be assessed and interpreted individually."
 }
 
 @inproceedings{jansen-etal-2022-controllable,
